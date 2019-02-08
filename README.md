@@ -3,7 +3,7 @@ Malutki obraz z tcpdumpem czyli snifferem pakietów na pokładzie.
 Ilustracja do https://aptmasterclass.com/ oraz https://blog.aptmasterclass.com/, na przykład można próbować polować na hasła:
 
 ```
-drg@kilo:~$ docker run --net=host corfr/tcpdump -i any -A -l |grep -i --color "user\|pass\|authorization\|login"
+drg@kilo:~$ docker run --net=host aptmasterclass/tcpdump -i any -A -l |grep -i --color "user\|pass\|authorization\|login"
 tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
 listening on any, link-type LINUX_SLL (Linux cooked), capture size 262144 bytes
 Authorization: Basic YWRtaW46YWRtaW4=
